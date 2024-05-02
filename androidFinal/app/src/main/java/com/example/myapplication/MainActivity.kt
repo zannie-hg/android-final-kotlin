@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     } else {
+                        println(task.exception)
                         Toast.makeText(this@MainActivity, "Authentication Failed.", Toast.LENGTH_SHORT).show()
                     }
                 })
